@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ch4g1flkyopqn"]
+
+[ext_resource type="Script" path="res://主场景.cs" id="1_vxr5o"]
+
+[node name="主场景" type="Node2D"]
+script = ExtResource("1_vxr5o")
