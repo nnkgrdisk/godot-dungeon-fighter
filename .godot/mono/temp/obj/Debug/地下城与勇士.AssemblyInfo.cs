@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("地下城与勇士")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01e2d1a6e88dcb307c7b20eb5fbd354b373f4b52")]
 [assembly: System.Reflection.AssemblyProductAttribute("地下城与勇士")]
 [assembly: System.Reflection.AssemblyTitleAttribute("地下城与勇士")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
