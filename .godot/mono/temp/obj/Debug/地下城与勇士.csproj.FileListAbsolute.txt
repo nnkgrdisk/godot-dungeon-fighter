@@ -18,3 +18,4 @@ D:\godot\projects\地下城与勇士\.godot\mono\temp\obj\Debug\ref\地下城与
 D:\godot\projects\地下城与勇士\.godot\mono\temp\bin\Debug\Microsoft.Win32.SystemEvents.dll
 D:\godot\projects\地下城与勇士\.godot\mono\temp\bin\Debug\System.Drawing.Common.dll
 D:\godot\projects\地下城与勇士\.godot\mono\temp\bin\Debug\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\godot\projects\地下城与勇士\.godot\mono\temp\obj\Debug\地下城与勇士.sourcelink.json
