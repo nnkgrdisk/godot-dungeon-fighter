@@ -64,12 +64,15 @@ public class IMGV2类
 			}
 		}
 	}
-	public void 调试输出()
+	public ImageTexture 取ImageTexture(int _index)
 	{
-		GD.Print("文件头：" + this.文件头);
-		GD.Print("图块索引表大小：" + this.图块索引表大小);
-		GD.Print("保留：" + this.保留);
-		GD.Print("版本号：" + this.版本号);
-		GD.Print("图块索引表数目：" + this.图块索引表数目);
+		return this.图块数据表[_index].取ImageTexture(this.图块索引表[_index]);
+	}
+	public Vector2 取贴图坐标(int _index)
+	{
+		return new Vector2(
+			this.图块索引表[_index].X坐标,
+			this.图块索引表[_index].Y坐标
+		);
 	}
 }

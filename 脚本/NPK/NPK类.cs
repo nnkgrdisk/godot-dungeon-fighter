@@ -18,7 +18,7 @@ public class NPK类
 	/// <param name="_source">建议使用FileStream.Read()读取字节数组</param>
 	public NPK类(byte[] _source)
 	{
-		int sindex;
+		int sindex;//_source的读取下标
 
 		sindex = 0;
 
@@ -45,31 +45,5 @@ public class NPK类
 			this.IMG表[i] = new IMG类(_source.复制字节数组(sindex, this.IMG索引表[i].文件大小));
 			sindex += this.IMG索引表[i].文件大小;
 		}
-	}
-	public void 调试输出()
-	{
-		GD.Print("文件头：" + this.文件头);
-
-		GD.Print("IMG总数：" + this.IMG总数);
-
-		GD.Print("<IMG索引表：>");
-		foreach (var item in this.IMG索引表)
-		{
-			item.调试输出();
-		}
-		GD.Print("/<IMG索引表：>");
-
-		this.校验位.调试输出();
-
-		GD.Print("<IMG表：>");
-		for (int i = 0; i < this.IMG总数; i++)
-		{
-			if(IMG表[i].取版本()==2)
-			{
-				IMGV2类 v2 = (IMGV2类)IMG表[i];
-				v2.调试输出();
-			}
-		}
-		GD.Print("</IMG表：>");
 	}
 }

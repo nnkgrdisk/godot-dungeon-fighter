@@ -57,4 +57,8 @@ public class IMGV2图块索引类
     {
         return 颜色系统或指针类型 == 0x11 ? true : false;
     }
+    public bool 是Zlib压缩状态()
+    {
+        return this.压缩状态或指向帧号 == 0x06 ? true : false;
+    }
 }

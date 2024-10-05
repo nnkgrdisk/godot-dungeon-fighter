@@ -4,6 +4,7 @@ using System.IO;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
+using System.Runtime.CompilerServices;
 
 public class 图块数据类
 {
@@ -23,7 +24,7 @@ public class 图块数据类
 		DXT_5 = 0x14,
 		UNKNOWN = 0x00
 	}
-	public static System.Drawing.Bitmap RGB数组到Bitmap(byte[] data, Size size, ColorBits bits,bool is_not_enctypt)
+	private System.Drawing.Bitmap RGB数组到Bitmap(byte[] data, Size size, ColorBits bits,bool is_not_enctypt)
 	{
 		var bytes_size = size.Width * size.Height * (bits == ColorBits.ARGB_8888 ? 4 : 2);
             if (is_not_enctypt) {
@@ -40,13 +41,31 @@ public class 图块数据类
 	}
 
 	#pragma warning disable CA1416
-	public static byte[] BitMap到字节数组(System.Drawing.Image image,ImageFormat format)
+	private byte[] BitMap到字节数组(System.Drawing.Image image,ImageFormat format)
 	{
         using(MemoryStream ms = new MemoryStream())
         {
             image.Save(ms, format);
             return ms.ToArray();
         }
+	}
+	public ImageTexture 取ImageTexture(IMGV2图块索引类 _search)
+	{
+		ImageTexture result = new ImageTexture();
+		System.Drawing.Bitmap bitmap = RGB数组到Bitmap(
+			this.源数据,
+			new Size(_search.帧域宽,_search.图像高),
+			(ColorBits)_search.颜色系统或指针类型,
+			_search.是Zlib压缩状态()
+		);
+		byte[] bytes = BitMap到字节数组(
+			bitmap,
+			ImageFormat.Bmp
+		);
+		Godot.Image image = new Godot.Image();
+		image.LoadBmpFromBuffer(bytes);
+		result.SetImage(image);
+		return result;
 	}
 	public static int Read(Stream stream, int length, out byte[] buf)
 	{

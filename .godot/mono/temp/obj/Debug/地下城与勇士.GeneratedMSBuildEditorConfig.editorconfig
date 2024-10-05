@@ -1,6 +1,6 @@
 is_global = true
 build_property.GodotDisabledSourceGenerators = 
-build_property.GodotProjectDir = d:\godot\projects\地下城与勇士\
+build_property.GodotProjectDir = D:\godot\projects\地下城与勇士\
 build_property.GodotProjectDirBase64 = 
 build_property.GodotSourceGenerators = 
 build_property.IsGodotToolsProject = 
@@ -13,6 +13,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = 地下城与勇士
-build_property.ProjectDir = d:\godot\projects\地下城与勇士\
+build_property.ProjectDir = D:\godot\projects\地下城与勇士\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
