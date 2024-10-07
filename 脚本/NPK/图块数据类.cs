@@ -54,7 +54,7 @@ public class 图块数据类
 		ImageTexture result = new ImageTexture();
 		System.Drawing.Bitmap bitmap = RGB数组到Bitmap(
 			this.源数据,
-			new Size(_search.帧域宽,_search.图像高),
+			new Size(_search.图像宽,_search.图像高),
 			(ColorBits)_search.颜色系统或指针类型,
 			_search.是Zlib压缩状态()
 		);
