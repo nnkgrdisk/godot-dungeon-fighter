@@ -35,7 +35,7 @@ public class IMGV2类
 		图块索引表 = new IMGV2图块索引类[this.图块索引表数目];
 
 		for (int i = 0; i < this.图块索引表数目; i++)
-		{
+		{			
 			if (_bytes.复制字节数组(bindex, 4).到数字() == 0x11)//判断索引是否为指针类型
 			{
 				图块索引表[i] = new IMGV2图块索引类(_bytes.复制字节数组(bindex, 8));

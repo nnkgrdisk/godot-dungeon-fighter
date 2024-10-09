@@ -11,7 +11,6 @@ public static class 字节数组静态扩展类
     public static byte[] 复制字节数组(this byte[] _source, int _start, int _length)
     {
         byte[] result;
-
         result = new byte[_length];
 
         for (int i = 0; i < _length; i++)

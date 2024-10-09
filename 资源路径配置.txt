@@ -1,0 +1,2 @@
+[NPK=D:\godot\projects\地下城与勇士_资源\ImagePacks2]
+[PVF=D:\godot\projects\地下城与勇士_资源\PVF\PVF.zip]
