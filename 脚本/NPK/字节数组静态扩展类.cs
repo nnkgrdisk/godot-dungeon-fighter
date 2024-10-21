@@ -56,19 +56,19 @@ public static class 字节数组静态扩展类
 
         result = System.Text.Encoding.UTF8.GetString(result_bytes);
         result = result.Substring(0, result.IndexOf(".img") + ".img".Length);//img名字固定以".img"结尾
-        
+
         return result;
     }
     public static void 调试输出(this byte[] _bytes)
     {
         StringBuilder sb = new StringBuilder();
         sb.Append('[');
-        for(int i = 0;i<_bytes.Length-1;i++)
+        for (int i = 0; i < _bytes.Length - 1; i++)
         {
             sb.Append(_bytes[i]);
             sb.Append(',');
         }
-        sb.Append(_bytes[_bytes.Length-1]);
+        sb.Append(_bytes[_bytes.Length - 1]);
         sb.Append(']');
         GD.Print(sb.ToString());
     }

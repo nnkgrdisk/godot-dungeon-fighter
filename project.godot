@@ -21,6 +21,7 @@ project/assembly_name="地下城与勇士"
 
 [network]
 
+limits/debugger/max_chars_per_second=3276800
 limits/debugger/max_queued_messages=2048000
 
 [rendering]

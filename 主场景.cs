@@ -10,7 +10,6 @@ public partial class 主场景 : Node2D
 	public override void _Ready()
 	{
 		GD.Print("hello world");
-		资源加载单例类.唯一实例.初始化();
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

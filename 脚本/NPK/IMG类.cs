@@ -18,14 +18,14 @@ public class IMG类
 	{
 		int result;
 
-		result = BitConverter.ToInt32(this.源数据.复制字节数组(24,4));
+		result = BitConverter.ToInt32(this.源数据.复制字节数组(24, 4));
 
 		return result;
 	}
 	public static explicit operator IMGV2类(IMG类 _self)
 	{
-		IMGV2类 result = new IMGV2类(_self.源数据);
-
+		IMGV2类 result;
+		result = new IMGV2类(_self.源数据);
 		return result;
 	}
 }

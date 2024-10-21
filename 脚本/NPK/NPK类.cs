@@ -14,6 +14,7 @@ public class NPK类
 	public 贴图类[][] 贴图表;
 	/// <summary>
 	/// <para>把IO读出来的字节数组转为C#类的实例。</para>
+	/// <para>建议使用"NPK读取器类.读取NPK(path)"创建该实例。</para>
 	/// <para>具体参考《关于DNF的多媒体包NPK文件的那些事儿（1）》链接：https://blog.csdn.net/u010274704/article/details/77319001</para>
 	/// </summary>
 	/// <param name="_source">建议使用FileStream.Read()读取字节数组</param>
@@ -53,7 +54,8 @@ public class NPK类
 		{			
 			if (this.IMG表[i].取版本() == 2)
 			{
-				this.贴图表[i] = new 贴图类[((IMGV2类)IMG表[i]).图块数据表.Length];	
+				IMGV2类 _ = (IMGV2类)IMG表[i];
+				this.贴图表[i] = new 贴图类[_.图块数据表.Length];					
 				continue;
 			}
 			if (IMG表[i].取版本() == 4)
