@@ -34,8 +34,8 @@ public class IMGV2类
 
 		图块索引表 = new IMGV2图块索引类[this.图块索引表数目];
 
-		for (int i = 0; i < this.图块索引表数目; i++)
-		{			
+		for (int i = 0; i < 图块索引表.Length; i++)
+		{		
 			if (_bytes.复制字节数组(bindex, 4).到数字() == 0x11)//判断索引是否为指针类型
 			{
 				图块索引表[i] = new IMGV2图块索引类(_bytes.复制字节数组(bindex, 8));
@@ -50,9 +50,9 @@ public class IMGV2类
 
 		图块数据表 = new 图块数据类[this.图块索引表数目];
 
-		for (int i = 0; i < this.图块索引表数目; i++)
+		for (int i = 0; i < 图块数据表.Length; i++)
 		{
-			if (_bytes.复制字节数组(bindex, 4).到数字() == 0x11)
+			if (图块索引表[i].是指针类型())
 			{
 				图块数据表[i] = new 图块数据类(new byte[0]);
 				bindex += 0;
@@ -66,7 +66,22 @@ public class IMGV2类
 	}
 	public ImageTexture 取ImageTexture(int _index)
 	{
-		return this.图块数据表[_index].取ImageTexture(this.图块索引表[_index]);
+		int recursion_limit = 0;
+		int max_recursion_limit = 5;
+		int image_index = _递归找图片型图块索引(_index);
+		return this.图块数据表[image_index].取ImageTexture(this.图块索引表[image_index]);
+		int _递归找图片型图块索引(int _index)
+		{
+			if(this.图块索引表[_index].是指针类型()==false || recursion_limit==max_recursion_limit)
+			{
+				return _index;
+			}
+			else
+			{
+				recursion_limit = recursion_limit+1;
+				return _递归找图片型图块索引(this.图块索引表[_index].压缩状态或指向帧号);
+			}
+		}
 	}
 	public Vector2 取贴图坐标(int _index)
 	{
