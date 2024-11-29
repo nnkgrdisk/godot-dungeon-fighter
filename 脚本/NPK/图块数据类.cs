@@ -24,7 +24,7 @@ public class 图块数据类
 		DXT_5 = 0x14,
 		UNKNOWN = 0x00
 	}
-	private System.Drawing.Bitmap RGB数组到Bitmap(byte[] data, Size size, ColorBits bits,bool is_not_enctypt)
+	private System.Drawing.Bitmap ARGB数组到Bitmap(byte[] data, Size size, ColorBits bits,bool is_not_enctypt)
 	{
 		var bytes_size = size.Width * size.Height * (bits == ColorBits.ARGB_8888 ? 4 : 2);
             if (is_not_enctypt) {
@@ -52,7 +52,7 @@ public class 图块数据类
 	public ImageTexture 取ImageTexture(IMGV2图块索引类 _search)
 	{
 		ImageTexture result = new ImageTexture();
-		System.Drawing.Bitmap bitmap = RGB数组到Bitmap(
+		System.Drawing.Bitmap bitmap = ARGB数组到Bitmap(
 			this.源数据,
 			new Size(_search.图像宽,_search.图像高),
 			(ColorBits)_search.颜色系统或指针类型,

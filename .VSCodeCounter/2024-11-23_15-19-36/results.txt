@@ -1,0 +1,122 @@
+Date : 2024-11-23 15:19:36
+Directory : d:\godot\projects\地下城与勇士
+Total : 76 files,  2341 codes, 95 comments, 214 blanks, all 2650 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| C#         |         25 |        896 |         88 |        109 |      1,093 |
+| Properties |         41 |        862 |          7 |         94 |        963 |
+| JSON       |          5 |        535 |          0 |          0 |        535 |
+| XML        |          4 |         33 |          0 |          1 |         34 |
+| Markdown   |          1 |         15 |          0 |         10 |         25 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                 | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                    |         76 |      2,341 |         95 |        214 |      2,650 |
+| . (Files)                                                                                            |          4 |         42 |          2 |         15 |         59 |
+| .godot                                                                                               |         51 |      1,433 |         18 |        101 |      1,552 |
+| .godot (Files)                                                                                       |          1 |          1 |          0 |          1 |          2 |
+| .godot\editor                                                                                        |         39 |        843 |          7 |         92 |        942 |
+| .godot\mono                                                                                          |         11 |        589 |         11 |          8 |        608 |
+| .godot\mono\temp                                                                                     |         11 |        589 |         11 |          8 |        608 |
+| .godot\mono\temp\bin                                                                                 |          2 |        121 |          0 |          0 |        121 |
+| .godot\mono\temp\bin\Debug                                                                           |          2 |        121 |          0 |          0 |        121 |
+| .godot\mono\temp\obj                                                                                 |          9 |        468 |         11 |          8 |        487 |
+| .godot\mono\temp\obj (Files)                                                                         |          4 |        434 |          0 |          0 |        434 |
+| .godot\mono\temp\obj\Debug                                                                           |          5 |         34 |         11 |          8 |         53 |
+| 测试                                                                                                   |          4 |        113 |         17 |         18 |        148 |
+| 测试\测试1                                                                                               |          3 |         88 |          9 |         15 |        112 |
+| 测试\测试2                                                                                               |          1 |         25 |          8 |          3 |         36 |
+| 脚本                                                                                                   |         17 |        753 |         58 |         80 |        891 |
+| 脚本\NPK                                                                                               |         12 |        507 |         52 |         69 |        628 |
+| 脚本\PVF                                                                                               |          4 |        225 |          6 |         10 |        241 |
+| 脚本\扩展                                                                                                |          1 |         21 |          0 |          1 |         22 |
++------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                             | language   | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| d:\godot\projects\地下城与勇士\.godot\editor\ANI类.cs-folding-02808f9979cbd1f03633a8a528863f5b.cfg          | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\Area2D1.cs-folding-5af40be389b3294cfe95a5079a7c3537.cfg       | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\IMGV2类.cs-folding-13090f0b26e144eb55d93d6b7e3d80c0.cfg        | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\IMGV4类.cs-folding-9a103cdc124c1975b144038c22085971.cfg        | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\IMGV5类.cs-folding-f7fbf25931bae9494bc66f9823f51c7a.cfg        | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\IMG类.cs-folding-29e91a4381e7a31ca9d70787a733743e.cfg          | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\IMG索引类.cs-folding-29c39123c51fe8b653c91c460b66ecb9.cfg        | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\NPK扩展类.cs-folding-15c267a9599126494eab083f3253e532.cfg        | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\NPK类.cs-folding-282bb4da9b88dd84cd4584f62c6c05b2.cfg          | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\NPK读取器.cs-folding-726565fd48253091fd67c1c399d007ae.cfg        | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\PVF加载器类.cs-folding-74cae2df40705f822fe6a11fb2c365a0.cfg       | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\PVF类.cs-folding-7ceafd9c28266fc380c4e4c5fb1057dc.cfg          | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\Zlib类.cs-folding-49cb98cc64d8d83e09650747563c75e1.cfg         | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\editor_layout.cfg                                             | Properties |         42 |          0 |          8 |         50 |
+| d:\godot\projects\地下城与勇士\.godot\editor\project_metadata.cfg                                          | Properties |         21 |          7 |         10 |         38 |
+| d:\godot\projects\地下城与勇士\.godot\editor\script_editor_cache.cfg                                       | Properties |         12 |          0 |          2 |         14 |
+| d:\godot\projects\地下城与勇士\.godot\editor\主场景.cs-folding-fd2fb8dbee97490b7349cb45444be91b.cfg           | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\主场景.tscn-editstate-17e5afe388f4aa3bda709bffb4338e99.cfg       | Properties |        174 |          0 |          2 |        176 |
+| d:\godot\projects\地下城与勇士\.godot\editor\主场景.tscn-folding-17e5afe388f4aa3bda709bffb4338e99.cfg         | Properties |          4 |          0 |          2 |          6 |
+| d:\godot\projects\地下城与勇士\.godot\editor\减按钮.cs-folding-657c38ae5476ee58bab1321145d50212.cfg           | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\加按钮.cs-folding-2c6fdc44a9236f702bf53a96acf321b0.cfg           | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\加载NPK测试.cs-folding-ac2b2f94335c9764c5df4e344e9dc090.cfg       | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\加载鬼剑士皮肤.cs-folding-091653b0564986a7d0abdd311c72cc79.cfg       | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\加载鬼剑士皮肤减按钮.cs-folding-bda66540e1b56d19a90b09bdcbb8f879.cfg    | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\加载鬼剑士皮肤加按钮.cs-folding-3702ba5df729fb7ca47c4ad4224c742d.cfg    | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\图块数据类.cs-folding-475837900be6cdbe6f938178524dcd98.cfg         | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\图块索引类.cs-folding-5287ed97311f538ba2733769d9731ad8.cfg         | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\图片类.cs-folding-135949c6d62e0ad3b8d62858ada83761.cfg           | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\测试1.cs-folding-51b576d7f01685622b58938393bc7594.cfg           | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\测试1.tscn-editstate-97f0e42c4db8f4d86ea5c4740c1dca53.cfg       | Properties |        174 |          0 |          2 |        176 |
+| d:\godot\projects\地下城与勇士\.godot\editor\测试1.tscn-editstate-f82788638d1c210c1edf3c97128606a5.cfg       | Properties |        174 |          0 |          2 |        176 |
+| d:\godot\projects\地下城与勇士\.godot\editor\测试1.tscn-folding-97f0e42c4db8f4d86ea5c4740c1dca53.cfg         | Properties |          4 |          0 |          2 |          6 |
+| d:\godot\projects\地下城与勇士\.godot\editor\测试1.tscn-folding-f82788638d1c210c1edf3c97128606a5.cfg         | Properties |          4 |          0 |          2 |          6 |
+| d:\godot\projects\地下城与勇士\.godot\editor\测试2.cs-folding-8f1ed96d016810e82c593f4c88b41f20.cfg           | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\测试2.tscn-editstate-aae3751ba04ae518bdc2de522310beaa.cfg       | Properties |        174 |          0 |          2 |        176 |
+| d:\godot\projects\地下城与勇士\.godot\editor\测试2.tscn-folding-aae3751ba04ae518bdc2de522310beaa.cfg         | Properties |          4 |          0 |          2 |          6 |
+| d:\godot\projects\地下城与勇士\.godot\editor\贴图类.cs-folding-8ffdace688daaa37024fda7d4f8ee25f.cfg           | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\资源加载单例类.cs-folding-16b94dc7b5fdd2c0e9566c24007e03ba.cfg       | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\editor\输出调试信息单例类.cs-folding-c26e9af7bda9be8c6c6f3033f3aa589c.cfg     | Properties |          2 |          0 |          2 |          4 |
+| d:\godot\projects\地下城与勇士\.godot\global_script_class_cache.cfg                                        | Properties |          1 |          0 |          1 |          2 |
+| d:\godot\projects\地下城与勇士\.godot\mono\temp\bin\Debug\地下城与勇士.deps.json                                 | JSON       |        111 |          0 |          0 |        111 |
+| d:\godot\projects\地下城与勇士\.godot\mono\temp\bin\Debug\地下城与勇士.runtimeconfig.json                        | JSON       |         10 |          0 |          0 |         10 |
+| d:\godot\projects\地下城与勇士\.godot\mono\temp\obj\Debug\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs   | C#         |          3 |          1 |          1 |          5 |
+| d:\godot\projects\地下城与勇士\.godot\mono\temp\obj\Debug\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs   | C#         |          3 |          1 |          1 |          5 |
+| d:\godot\projects\地下城与勇士\.godot\mono\temp\obj\Debug\地下城与勇士.AssemblyInfo.cs                           | C#         |          9 |          9 |          5 |         23 |
+| d:\godot\projects\地下城与勇士\.godot\mono\temp\obj\Debug\地下城与勇士.GeneratedMSBuildEditorConfig.editorconfig | Properties |         18 |          0 |          1 |         19 |
+| d:\godot\projects\地下城与勇士\.godot\mono\temp\obj\Debug\地下城与勇士.sourcelink.json                           | JSON       |          1 |          0 |          0 |          1 |
+| d:\godot\projects\地下城与勇士\.godot\mono\temp\obj\project.assets.json                                    | JSON       |        308 |          0 |          0 |        308 |
+| d:\godot\projects\地下城与勇士\.godot\mono\temp\obj\地下城与勇士.csproj.nuget.dgspec.json                        | JSON       |        105 |          0 |          0 |        105 |
+| d:\godot\projects\地下城与勇士\.godot\mono\temp\obj\地下城与勇士.csproj.nuget.g.props                            | XML        |         19 |          0 |          0 |         19 |
+| d:\godot\projects\地下城与勇士\.godot\mono\temp\obj\地下城与勇士.csproj.nuget.g.targets                          | XML        |          2 |          0 |          0 |          2 |
+| d:\godot\projects\地下城与勇士\README.md                                                                   | Markdown   |         15 |          0 |         10 |         25 |
+| d:\godot\projects\地下城与勇士\icon.svg                                                                    | XML        |          1 |          0 |          1 |          2 |
+| d:\godot\projects\地下城与勇士\主场景.cs                                                                      | C#         |         15 |          2 |          4 |         21 |
+| d:\godot\projects\地下城与勇士\地下城与勇士.csproj                                                               | XML        |         11 |          0 |          0 |         11 |
+| d:\godot\projects\地下城与勇士\测试\测试1\加载鬼剑士皮肤.cs                                                           | C#         |         42 |          5 |          4 |         51 |
+| d:\godot\projects\地下城与勇士\测试\测试1\加载鬼剑士皮肤减按钮.cs                                                        | C#         |         23 |          2 |          6 |         31 |
+| d:\godot\projects\地下城与勇士\测试\测试1\加载鬼剑士皮肤加按钮.cs                                                        | C#         |         23 |          2 |          5 |         30 |
+| d:\godot\projects\地下城与勇士\测试\测试2\测试2.cs                                                               | C#         |         25 |          8 |          3 |         36 |
+| d:\godot\projects\地下城与勇士\脚本\NPK\IMGV2图块索引类.cs                                                        | C#         |         56 |          4 |          5 |         65 |
+| d:\godot\projects\地下城与勇士\脚本\NPK\IMGV2类.cs                                                            | C#         |         81 |          4 |          9 |         94 |
+| d:\godot\projects\地下城与勇士\脚本\NPK\IMGV4类.cs                                                            | C#         |         11 |          2 |          3 |         16 |
+| d:\godot\projects\地下城与勇士\脚本\NPK\IMGV5类.cs                                                            | C#         |         11 |          2 |          3 |         16 |
+| d:\godot\projects\地下城与勇士\脚本\NPK\IMG类.cs                                                              | C#         |         22 |          5 |          5 |         32 |
+| d:\godot\projects\地下城与勇士\脚本\NPK\IMG索引类.cs                                                            | C#         |         19 |          4 |          5 |         28 |
+| d:\godot\projects\地下城与勇士\脚本\NPK\NPK类.cs                                                              | C#         |         71 |         12 |         14 |         97 |
+| d:\godot\projects\地下城与勇士\脚本\NPK\NPK读取器类.cs                                                           | C#         |         18 |          5 |          3 |         26 |
+| d:\godot\projects\地下城与勇士\脚本\NPK\Zlib类.cs                                                             | C#         |         18 |          7 |          2 |         27 |
+| d:\godot\projects\地下城与勇士\脚本\NPK\图块数据类.cs                                                             | C#         |        125 |          0 |          6 |        131 |
+| d:\godot\projects\地下城与勇士\脚本\NPK\字节数组静态扩展类.cs                                                         | C#         |         57 |          7 |         12 |         76 |
+| d:\godot\projects\地下城与勇士\脚本\NPK\贴图类.cs                                                               | C#         |         18 |          0 |          2 |         20 |
+| d:\godot\projects\地下城与勇士\脚本\PVF\ANI类.cs                                                              | C#         |        182 |          6 |          5 |        193 |
+| d:\godot\projects\地下城与勇士\脚本\PVF\LST类.cs                                                              | C#         |         18 |          0 |          1 |         19 |
+| d:\godot\projects\地下城与勇士\脚本\PVF\PVF类.cs                                                              | C#         |         10 |          0 |          2 |         12 |
+| d:\godot\projects\地下城与勇士\脚本\PVF\PVF读取器类.cs                                                           | C#         |         15 |          0 |          2 |         17 |
+| d:\godot\projects\地下城与勇士\脚本\扩展\ExDump.cs                                                             | C#         |         21 |          0 |          1 |         22 |
+| Total                                                                                                |            |      2,341 |         95 |        214 |      2,650 |
++------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

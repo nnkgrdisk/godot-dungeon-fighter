@@ -32,6 +32,7 @@ public partial class 加载鬼剑士皮肤 : Node
 		//path = @"C:\Users\Administrator\Desktop\测试用npk\sprite_character_swordman_equipment_avatar_skin阉割版.NPK";
 		//path = @"C:\Users\Administrator\Desktop\测试用npk\sprite_character_swordman_equipment_avatar_skin.NPK";
 		path = @"C:\Users\Administrator\Desktop\测试用npk\sprite_character_swordman_equipment_avatar_skin - 46.NPK";
+		//path = @"C:\Users\Administrator\Desktop\测试用npk\sprite_character_swordman_effect_cutin(Transformed).npk";
 		sprite = GetNode<Sprite2D>("Sprite2D");
 		npk = NPK读取器类.读取NPK(path);
 		sprite.Texture = npk.取贴图表成员(0, 0).贴图;
@@ -45,5 +46,6 @@ public partial class 加载鬼剑士皮肤 : Node
 	void on_index_change()
 	{
 		sprite.Texture = npk.取贴图表成员(xindex, yindex).贴图;
+		GD.Print(npk.取贴图表成员(xindex,yindex).名称);
 	}
 }
